@@ -1,18 +1,39 @@
 # 📊 E-commerce Sales Analysis
 
 ## Overview
-This project analyzes e-commerce transaction data to uncover key business insights related to revenue trends, customer behavior, and product performance.
+This project performs an end-to-end analysis of e-commerce sales data using Python, SQL, and data visualization techniques.
 
-The goal is to transform raw transactional data into actionable insights using Python, SQL, and data visualization.
+The goal is to transform raw transactional data into actionable business insights.
 
 ---
 
-## Key Objectives
-- Analyze monthly revenue trends
-- Identify top-performing products
-- Understand customer behavior (new vs repeat)
-- Detect revenue concentration across countries
-- Build a simple analytics dashboard
+## Key Features
+
+- Data cleaning and preprocessing using Pandas
+- Revenue analysis and trend visualization
+- Customer segmentation (New vs Repeat)
+- Top products and customer analysis
+- Advanced SQL analysis (CTE, Window Functions, Subqueries)
+- Interactive dashboard using Streamlit
+
+---
+
+## Advanced SQL Analysis
+
+This project includes advanced SQL techniques:
+
+- Window Functions (Customer Ranking)
+- Subqueries (High-value transactions)
+- CTE (Monthly revenue trend)
+
+---
+
+## Key Insights
+
+- Revenue is concentrated among a small number of customers
+- A limited set of products drives the majority of revenue
+- Sales show seasonal trends with peak periods
+- High-value transactions play a major role in business performance
 
 ---
 
@@ -48,50 +69,54 @@ Ecommerce-Sales-Analysis/
 
 ---
 
-## Data Cleaning
-- Standardized column names (lowercase, removed spaces)
-- Handled missing values
-- Converted date columns to datetime format
-- Created new features (month, revenue)
+## Data Preparation
+
+- Standardized column names
+- Converted invoice dates to datetime
+- Removed missing customer IDs
+- Removed invalid (negative/zero) transactions
+- Created revenue feature
 
 ---
 
 ## SQL Analysis
-SQL was used to extract business insights from the cleaned dataset stored in SQLite.
+This project emphasizes **SQL-driven analytics**, including:
 
-Key SQL analyses include:
-- Monthly revenue trend
-- Top countries by revenue
-- Top products by revenue
-- Top customers by revenue
-- New vs repeat customer analysis
+- Aggregations (GROUP BY, SUM)
+- Subqueries (high-value transactions)
+- Window Functions (customer ranking)
+
+- CTE (monthly revenue trends)
 
 ---
 
 ## Key Insights
-- Revenue shows an overall increasing trend, especially toward the end of the year
-- A small number of products generate a large portion of total revenue
-- The United Kingdom contributes the majority of revenue
-- A small group of customers contributes significantly to total sales
-- Repeat customers outnumber new customers, showing strong retention potential
+
+- Revenue is highly concentrated among a small number of customers
+- A limited set of products drives most of the sales (Pareto effect)
+- Monthly revenue shows growth with seasonal patterns
+- High-value transactions significantly impact overall performance
+- Repeat customers are critical for long-term business sustainability
 
 ---
 
-## Business Recommendations
-- Focus marketing and inventory planning around high-demand months
-- Prioritize top-selling products to maximize revenue
-- Reduce dependency on one major market by expanding into other countries
-- Build loyalty programs for high-value and repeat customers
-- Use customer segmentation to improve retention strategies
+## 💡 Business Recommendations
+
+- Focus on retaining high-value customers
+- Prioritize top-performing products in marketing and inventory
+- Leverage seasonal trends for campaign planning
+- Develop strategies for increasing repeat customer rate
 
 ---
 
 ## 📊 Dashboard
-An interactive dashboard was built with Streamlit to visualize:
-- Revenue trend
+
+An interactive dashboard built with Streamlit visualizes:
+- Revenue trends over time
 - Top products
 - Top customers
-- Customer behavior
+- Customer behavior (new vs repeat)
+- High-value transactions
 
 ### Run the dashboard
 ```bash
@@ -99,7 +124,6 @@ streamlit run app.py
 ```
 ## Dashboard Preview
 ![Dashboard](images/dashboard.png)
-
 
 ---
 
