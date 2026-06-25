@@ -104,6 +104,7 @@ Three SQL techniques applied on the SQLite database:
 ---
 
 ## Dashboard
+![Dashboard](images/dashboard.png)
 
 To run locally:
 
