@@ -3,7 +3,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![SQLite](https://img.shields.io/badge/Database-SQLite-lightgrey)
-![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-FF4B4B)
+![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-FF4B4B)(https://ecommerce-sales-analysis-dashboard26.streamlit.app/)
 
 ---
 
